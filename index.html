@@ -25,29 +25,55 @@
   <body>
     <header id="inicio">
       <nav>
-        <ul>
-          <li>
-            <a href="#inicio"><i class="fa-solid fa-house icono"></i>inicio</a>
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="#inicio" class="nav__link"
+              ><i class="fa-solid fa-house icono"></i>inicio</a
+            >
           </li>
-          <li>
-            <a href=""><i class="fa-solid fa-lightbulb icono"></i>energias</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link"
+              ><i class="fa-solid fa-lightbulb icono"></i>energias<i
+                class="fa-solid fa-chevron-down icono"
+              ></i
+            ></a>
+            <ul class="sub__menu">
+              <li class="nav__sub__item">
+                <a href="#que-son" class="nav__sub__link">¿Que son?</a>
+              </li>
+              <li class="nav__sub__item">
+                <a href="#energia-eolica" class="nav__sub__link"
+                  >Energia Eólica</a
+                >
+              </li>
+              <li class="nav__sub__item">
+                <a href="#energia-solar" class="nav__sub__link"
+                  >Energia Solar</a
+                >
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="#formulario"
+          <li class="nav__item">
+            <a href="#formulario" class="nav__link"
               ><i class="fa-solid fa-address-card icono"></i>contactanos</a
             >
           </li>
-          <li>
-            <a href="#sobre-nosotros"
+          <li class="nav__item">
+            <a href="#sobre-nosotros" class="nav__link"
               ><i class="fa-solid fa-user icono"></i>sobre nosotros</a
             >
           </li>
         </ul>
       </nav>
-      <video src="multimedia/videos/aerogeneradores.mp4" autoplay loop></video>
+      <video
+        class="hero__video"
+        src="multimedia/videos/aerogeneradores.mp4"
+        autoplay
+        loop
+      ></video>
     </header>
     <main>
-      <section>
+      <section id="que-son">
         <div class="introduccion">
           <h1 class="titulo__introduccion">
             ¿Que son las energias renovables?
@@ -63,7 +89,7 @@
         </div>
       </section>
       <section>
-        <h2 class="titulo__tipos">Tipos de energias:</h2>
+        <h2  id="energia-eolica" class="titulo__tipos">Tipos de energias:</h2>
         <div class="energias">
           <div>
             <h3 class="subtitulo">Energia Eólica</h3>
@@ -107,7 +133,7 @@
             </p>
           </div>
         </div>
-        <div class="line"></div>
+        <div id="energia-solar" class="line"></div>
         <div class="energias">
           <div>
             <h3 class="subtitulo">Energia solar</h3>
